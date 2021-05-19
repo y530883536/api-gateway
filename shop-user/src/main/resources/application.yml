@@ -1,0 +1,21 @@
+server:
+  port: 8081
+  tomcat:
+    threads:
+      max: 10   #做处理高并发请求用，把最大线程数改小
+spring:
+  application:
+    name: service-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 9998
+        dashboard: localhost:8085
+  servlet:
+    multipart:
+      max-file-size: 50MB       #单文件大小
+      max-request-size: 50MB    #一次请求的总文件大小
+

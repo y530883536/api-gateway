@@ -1,0 +1,22 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true #让gateway从nacos中获取服务信息
+      routes:
+        - id: user_route  #当前路由的名字，一般路由到什么服务就取什么名字
+          #uri: http://localhost:8081  #转发的地址
+          uri: lb://service-user  #lb是指开启负载均衡load-balance
+          order: 1  #路由的优先级，数字越小优先级越高
+          predicates: #断言，就是请求转发需要满足的条件
+            - Path=/user-service/** #请求路径满足Path制定的规则时才会转发
+          filters: #过滤器，可以对请求做一些处理
+            - StripPrefix=1 #请求转发之前去掉一层路劲
