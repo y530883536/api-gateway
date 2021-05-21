@@ -10,7 +10,12 @@ public class Product {
     private Double price;
 
     //这个方法是做分支切换测试的，没有意义，testMaster
-    public void testMaster() {
+    public void testMaster1() {
+
+    }
+
+    //这个方法是做分支切换测试的，没有意义，testMaster
+    public void testMaster2() {
 
     }
 }
