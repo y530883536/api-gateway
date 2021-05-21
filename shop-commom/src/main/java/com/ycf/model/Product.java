@@ -22,4 +22,24 @@ public class Product {
     public void testMaster3() {
 
     }
+
+    //这个方法是做分支切换测试的，没有意义，testYcf
+    public void testYcf1() {
+
+    }
+
+    //这个方法是做分支切换测试的，没有意义，testYcf
+    public void testYcf2() {
+
+    }
+
+    //这个方法是做分支切换测试的，没有意义，testYcf
+    public void testYcf3() {
+
+    }
+
+    //这个方法是做分支切换测试的，没有意义，testYcf
+    public void testYcf4() {
+
+    }
 }
