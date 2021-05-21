@@ -17,4 +17,9 @@ public class Product {
     public void testMaster2() {
 
     }
+
+    //这个方法是做分支切换测试的，没有意义，testMaster
+    public void testMaster3() {
+
+    }
 }
