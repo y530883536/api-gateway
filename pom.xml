@@ -15,6 +15,7 @@
         <module>shop-order</module>
         <module>api-gateway</module>
         <module>test</module>
+        <module>example-spi</module>
     </modules>
 
     <!-- 指定父工程 -->
