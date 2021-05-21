@@ -15,7 +15,7 @@ public class ProductController {
     public Product getById(@PathVariable Integer id){
         Product product = new Product();
         product.setId(1);
-        product.setProductName("phone");
+        product.setName("phone");
         product.setPrice(1000D);
         return product;
     }
