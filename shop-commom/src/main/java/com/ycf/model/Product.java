@@ -8,4 +8,9 @@ public class Product {
     private Integer id;
     private String name;
     private Double price;
+
+    //这个方法是做分支切换测试的，没有意义，testMaster
+    public void testMaster() {
+
+    }
 }
